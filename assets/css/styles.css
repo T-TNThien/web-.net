@@ -164,6 +164,7 @@ h1 {
     font-size: 2.5rem;
     font-weight: bold;
     margin: 10px auto;
+    line-height: 150%;
 }
 
 #intro p {
@@ -213,26 +214,6 @@ h1 {
 .area-name {
     text-align: center;
     font-weight: bold;
-}
-
-.search {
-    display: flex;
-
-}
-
-.search-results {
-    flex: 7;
-    max-width: 700px;
-} 
-
-.result-content {
-    height: 255px;
-    background-color: gray;
-}
-
-.search-filters {
-    flex: 3;
-    max-width: 355px;
 }
 
 /* FOOTER */
