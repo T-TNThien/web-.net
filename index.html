@@ -1,179 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Besnik</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cho thuê phòng trọ</title>
     <!-- Reset CSS -->
-    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/min.desktop.frontend.202188a1.css?v=202410111"
+    />
     <!-- Embed Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
     <!-- <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png"> -->
-    <link rel="manifest" href="./assets/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
     <!-- Style -->
-    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
 
-<body>
+  <body>
     <!-- PC HEADER -->
     <header class="header">
-        <div class="content">
-            <nav class="navbar">
-                <!-- Tablet and Mobile menu -->
-                <label for="menu-checkbox" class="toggle-menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <path
-                            fill="currentColor"
-                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-                    </svg>
-                </label>
+      <div class="content">
+        <nav class="navbar">
+          <!-- Tablet and Mobile menu -->
+          <label for="menu-checkbox" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                fill="currentColor"
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </label>
 
-                <!-- Logo -->
-                <a href="#" class="logo"><img src="./assets/img/Logo.svg" alt="Besnik"></a>
+          <!-- Logo -->
+          <a href="#" class="logo"
+            ><img src="./assets/img/Logo.svg" alt="Besnik"
+          /></a>
 
-                <!-- Navigation -->
-                <ul id="pc-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#resources">Resources</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li class="show-on-mobile seperate"><a href="#!">Sign In</a></li>
-                    <li class="show-on-mobile"><a href="#!">Sign Up</a></li>
-                </ul>
+          <!-- Navigation -->
+          <ul id="pc-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="show-on-mobile seperate"><a href="#!">Sign In</a></li>
+            <li class="show-on-mobile"><a href="#!">Sign Up</a></li>
+          </ul>
 
-                <!-- Action -->
-                <div class="actions">
-                    <a href="#!" class="action-link">Sign in</a>
-                    <a href="#!" class="btn action-btn">Sign up</a>
-                </div>
-            </nav>
-        </div>
+          <!-- Action -->
+          <div class="actions">
+            <a href="#!" class="action-link">Sign in</a>
+            <a href="#!" class="btn action-btn">Sign up</a>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <!-- TABLET AND MOBILE HEADER -->
-     <header class="mobile-header">
-        <input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden>
+    <header class="mobile-header">
+      <input
+        type="checkbox"
+        name=""
+        id="menu-checkbox"
+        class="menu-checkbox"
+        hidden
+      />
 
-        <!-- Overlay -->
-        <label for="menu-checkbox" class="menu-overlay"></label>
+      <!-- Overlay -->
+      <label for="menu-checkbox" class="menu-overlay"></label>
 
-        <!-- Menu Content -->
-        <div class="menu-drawer">
-            <a href="#"><img src="./assets/img/Logo.svg" alt="Besnik"></a>
-            <!-- Navigation -->
-            <ul id="mobile-nav"></ul>
-            <script>
-                const pcNav = document.querySelector('#pc-nav');
-                const mobileNav = document.querySelector('#mobile-nav');
-                // Copy from PC NAV to Mobile Nav
-                mobileNav.innerHTML = pcNav.innerHTML;
-            </script>
-        </div>
-     </header>
+      <!-- Menu Content -->
+      <div class="menu-drawer">
+        <a href="#"><img src="./assets/img/Logo.svg" alt="Besnik" /></a>
+        <!-- Navigation -->
+        <ul id="mobile-nav"></ul>
+        <script>
+          const pcNav = document.querySelector("#pc-nav");
+          const mobileNav = document.querySelector("#mobile-nav");
+          // Copy from PC NAV to Mobile Nav
+          mobileNav.innerHTML = pcNav.innerHTML;
+        </script>
+      </div>
+    </header>
 
     <main>
-        
+      <div id="intro">
+        <h1>Cho Thuê Phòng Trọ, Giá Rẻ, Tiện Nghi, Mới Nhất 2024</h1>
+        <p>
+          Cho thuê phòng trọ - Kênh thông tin số 1 về phòng trọ giá rẻ, phòng
+          trọ sinh viên, phòng trọ cao cấp mới nhất năm 2024. Tất cả nhà trọ cho
+          thuê giá tốt nhất tại Việt Nam.
+        </p>
+      </div>
+      <div id="area">
+        <div id="area-title">Khu vực nổi bật</div>
+        <div id="area-list">
+          <div class="area-content" id="area-1">
+            <img src="assets/img/Quan1.png" alt="Quận 1" />
+            <div class="area-name">Quận 1</div>
+          </div>
+          <div class="area-content" id="area-2">
+            <img src="assets/img/Quan10.png" alt="Quận 10" />
+            <div class="area-name">Quận 10</div>
+          </div>
+          <div class="area-content" id="area-3">
+            <img src="assets/img/Quan7.png" alt="Quận 7" />
+            <div class="area-name">Quận 7</div>
+          </div>
+        </div>
+      </div>
+      <div class="search">
+        <!-- <div class="search-results">
+          <div class="result-content" id="result-1">
+            <img src="" alt="" />
+            <div class="result-details">
+              <div class="result-details name"></div>
+              <div class="result-details info">
+                <div class="info-cost"></div>
+                <div class="info-space"></div>
+                <div class="info-location"></div>
+                <div class="info-date"></div>
+              </div>
+              <div class="result-details ratings"></div>
+              <div class="result-details desc"></div>
+              <div class="result-details op">
+                <img src="" alt="" class="op-poster" />
+                <div class="op-name"></div>
+              </div>
+            </div>
+          </div>
+          <div class="result-content" id="result-2">
+            <img src="" alt="" />
+            <div class="result-details">
+              <div class="result-details name"></div>
+              <div class="result-details info">
+                <div class="info-cost"></div>
+                <div class="info-space"></div>
+                <div class="info-location"></div>
+                <div class="info-date"></div>
+              </div>
+              <div class="result-details ratings"></div>
+              <div class="result-details desc"></div>
+              <div class="result-details op">
+                <img src="" alt="" class="op-poster" />
+                <div class="op-name"></div>
+              </div>
+            </div>
+          </div>
+          <div class="result-content" id="result-3">
+            <img src="" alt="" />
+            <div class="result-details">
+              <div class="result-details name"></div>
+              <div class="result-details info">
+                <div class="info-cost"></div>
+                <div class="info-space"></div>
+                <div class="info-location"></div>
+                <div class="info-date"></div>
+              </div>
+              <div class="result-details ratings"></div>
+              <div class="result-details desc"></div>
+              <div class="result-details op">
+                <img src="" alt="" class="op-poster" />
+                <div class="op-name"></div>
+              </div>
+            </div>
+          </div>
+          <div class="result-content" id="result-4">
+            <img src="" alt="" />
+            <div class="result-details">
+              <div class="result-details name"></div>
+              <div class="result-details info">
+                <div class="info-cost"></div>
+                <div class="info-space"></div>
+                <div class="info-location"></div>
+                <div class="info-date"></div>
+              </div>
+              <div class="result-details ratings"></div>
+              <div class="result-details desc"></div>
+              <div class="result-details op">
+                <img src="" alt="" class="op-poster" />
+                <div class="op-name"></div>
+              </div>
+            </div>
+          </div>
+          <div class="result-content" id="result-5">
+            <img src="" alt="" />
+            <div class="result-details">
+              <div class="result-details name"></div>
+              <div class="result-details info">
+                <div class="info-cost"></div>
+                <div class="info-space"></div>
+                <div class="info-location"></div>
+                <div class="info-date"></div>
+              </div>
+              <div class="result-details ratings"></div>
+              <div class="result-details desc"></div>
+              <div class="result-details op">
+                <img src="" alt="" class="op-poster" />
+                <div class="op-name"></div>
+              </div>
+            </div>
+          </div>
+          <div class="result-content" id="result-6">
+            <img src="" alt="" />
+            <div class="result-details">
+              <div class="result-details name"></div>
+              <div class="result-details info">
+                <div class="info-cost"></div>
+                <div class="info-space"></div>
+                <div class="info-location"></div>
+                <div class="info-date"></div>
+              </div>
+              <div class="result-details ratings"></div>
+              <div class="result-details desc"></div>
+              <div class="result-details op">
+                <img src="" alt="" class="op-poster" />
+                <div class="op-name"></div>
+              </div>
+            </div>
+          </div>
+          <div class="result-content" id="result-7">
+            <img src="" alt="" />
+            <div class="result-details">
+              <div class="result-details name"></div>
+              <div class="result-details info">
+                <div class="info-cost"></div>
+                <div class="info-space"></div>
+                <div class="info-location"></div>
+                <div class="info-date"></div>
+              </div>
+              <div class="result-details ratings"></div>
+              <div class="result-details desc"></div>
+              <div class="result-details op">
+                <img src="" alt="" class="op-poster" />
+                <div class="op-name"></div>
+              </div>
+            </div>
+          </div>
+          <div class="result-content" id="result-8">
+            <img src="" alt="" />
+            <div class="result-details">
+              <div class="result-details name"></div>
+              <div class="result-details info">
+                <div class="info-cost"></div>
+                <div class="info-space"></div>
+                <div class="info-location"></div>
+                <div class="info-date"></div>
+              </div>
+              <div class="result-details ratings"></div>
+              <div class="result-details desc"></div>
+              <div class="result-details op">
+                <img src="" alt="" class="op-poster" />
+                <div class="op-name"></div>
+              </div>
+            </div>
+          </div>
+          <div class="result-content" id="result-9">
+            <img src="" alt="" />
+            <div class="result-details">
+              <div class="result-details name"></div>
+              <div class="result-details info">
+                <div class="info-cost"></div>
+                <div class="info-space"></div>
+                <div class="info-location"></div>
+                <div class="info-date"></div>
+              </div>
+              <div class="result-details ratings"></div>
+              <div class="result-details desc"></div>
+              <div class="result-details op">
+                <img src="" alt="" class="op-poster" />
+                <div class="op-name"></div>
+              </div>
+            </div>
+          </div>
+          <div class="result-content" id="result-10">
+            <img src="" alt="" />
+            <div class="result-details">
+              <div class="result-details name"></div>
+              <div class="result-details info">
+                <div class="info-cost"></div>
+                <div class="info-space"></div>
+                <div class="info-location"></div>
+                <div class="info-date"></div>
+              </div>
+              <div class="result-details ratings"></div>
+              <div class="result-details desc"></div>
+              <div class="result-details op">
+                <img src="" alt="" class="op-poster" />
+                <div class="op-name"></div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="post-sort">
+          <span>Sắp xếp: </span
+          ><a
+            class="active"
+            href="cho-thue-phong-trobfc7.html?orderby=mac-dinh&amp;page=1"
+            >Mặc định</a
+          ><a
+            class=""
+            href="cho-thue-phong-tro30d0.html?orderby=moi-nhat&amp;page=1"
+            >Mới nhất</a
+          ><a
+            class=""
+            href="cho-thue-phong-troaaad.html?orderby=video&amp;page=1"
+            >Có video</a
+          >
+        </div>
+        <ul class="post-listing clearfix">
+          <li
+            class="post-item post-id-277630 style-4 clearfix tin-vip vipnoibat"
+            style="border-color: #e13427"
+            post-id="277630"
+          >
+            <figure class="post-thumb">
+              <a class="clearfix" href="#"
+                ><img
+                  class="lazy_done"
+                  src="https://pt123.cdn.static123.com/images/thumbs/450x300/fit/2019/02/25/63b548ae81a263fc3ab3_1551067966.jpg"
+                  data-src="https://pt123.cdn.static123.com/images/thumbs/450x300/fit/2019/02/25/63b548ae81a263fc3ab3_1551067966.jpg"
+                  alt="Phòng trọ dạng căn hộ mini cao cấp tại 796 Lê Đức Thọ, P.15, Quận Gò Vấp"
+                  height="100"
+                  width="100"
+                  layout="responsive"
+                  data-loaded="true" /></a
+              ><span class="images-number">8 ảnh</span
+              ><span class="post-save js-btn-save" data-post-id="277630"
+                ><i></i
+              ></span>
+            </figure>
+            <div class="post-meta">
+              <h3 class="post-title">
+                <a style="color: #e13427" href="#"
+                  ><span class="star star-5"></span> Phòng trọ dạng căn hộ mini
+                  cao cấp tại 796 Lê Đức Thọ, P.15, Quận Gò Vấp
+                </a>
+              </h3>
+              <div class="meta-row clearfix">
+                <span class="post-price">3 triệu/tháng</span
+                ><span class="post-acreage">30m²</span
+                ><span class="post-location"
+                  ><a
+                    href="#"
+                    title="Cho thuê phòng trọ Quận Gò Vấp, Hồ Chí Minh"
+                    >Quận Gò Vấp, Hồ Chí Minh</a
+                  ></span
+                ><time class="post-time" title="Thứ 6, 11:27 25/10/2024"
+                  >2 giờ trước</time
+                >
+              </div>
+              <div class="meta-row clearfix">
+                <p class="post-summary">
+                  Cho thuê căn hộ mini cao cấp tại&nbsp;796 Lê Đức Thọ, Phường
+                  15, Quận Gò Vấp, Tp. Hồ Chí Minh.Diện tích 30m2, giá 3
+                  triệu/tháng.Có hầm giữ xe, có thang máy,…
+                </p>
+              </div>
+              <div class="meta-row clearfix">
+                <div class="post-author">
+                  <img src="/assets/img/default-user.png" alt="Default" /><span
+                    class="author-name"
+                    >Chị Giang</span
+                  >
+                </div>
+                <a
+                  rel="nofollow"
+                  target="_blank"
+                  href="#"
+                  class="btn-quick-zalo"
+                  >Nhắn Zalo</a
+                ><a
+                  rel="nofollow"
+                  target="_blank"
+                  href="tel:0928837249"
+                  class="btn-quick-call"
+                  >Gọi 0328837249</a
+                >
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="search-filters"></div>
+      </div>
     </main>
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="content">
-            <div class="row row-top">
-                <div class="column">
-                    <h3 class="heading">Product</h3>
-                    <ul class="list">
-                        <li class="item">
-                            <a href="#!">Listing</a>
-                        </li>
-                        <li class="item">
-                            <a href="#!">Property</a>
-                        </li>
-                        <li class="item">
-                            <a href="#!">Agents</a>
-                        </li>
-                        <li class="item">
-                            <a href="#!">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h3 class="heading">Resources</h3>
-                    <ul class="list">
-                        <li class="item">
-                            <a href="#!">Our Homes</a>
-                        </li>
-                        <li class="item">
-                            <a href="#!">Member Stories</a>
-                        </li>
-                        <li class="item">
-                            <a href="#!">Video</a>
-                        </li>
-                        <li class="item">
-                            <a href="#!">Free trial</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h3 class="heading">Company</h3>
-                    <ul class="list">
-                        <li class="item">
-                            <a href="#!">Patnerships</a>
-                        </li>
-                        <li class="item">
-                            <a href="#!">Terms of use</a>
-                        </li>
-                        <li class="item">
-                            <a href="#!">Privacy</a>
-                        </li>
-                        <li class="item">
-                            <a href="#!">Sitemap</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h3 class="heading">Get in touch</h3>
-                    <p class="desc">You'll find your next home, in any style you prefer.</p>
-                    <div class="socials">
-                        <a href="#!" class="social-link">
-                            <img src="./assets/img/facebook.svg" alt="">
-                        </a>
-                        <a href="#!" class="social-link">
-                            <img src="./assets/img/twitter.svg" alt="">
-                        </a>
-                        <a href="#!" class="social-link">
-                            <img src="./assets/img/linkedin.svg" alt="">
-                        </a>
-                    </div>
-                </div>
+      <div class="content">
+        <div class="row row-top">
+          <div class="column">
+            <h3 class="heading">Product</h3>
+            <ul class="list">
+              <li class="item">
+                <a href="#!">Listing</a>
+              </li>
+              <li class="item">
+                <a href="#!">Property</a>
+              </li>
+              <li class="item">
+                <a href="#!">Agents</a>
+              </li>
+              <li class="item">
+                <a href="#!">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3 class="heading">Resources</h3>
+            <ul class="list">
+              <li class="item">
+                <a href="#!">Our Homes</a>
+              </li>
+              <li class="item">
+                <a href="#!">Member Stories</a>
+              </li>
+              <li class="item">
+                <a href="#!">Video</a>
+              </li>
+              <li class="item">
+                <a href="#!">Free trial</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3 class="heading">Company</h3>
+            <ul class="list">
+              <li class="item">
+                <a href="#!">Patnerships</a>
+              </li>
+              <li class="item">
+                <a href="#!">Terms of use</a>
+              </li>
+              <li class="item">
+                <a href="#!">Privacy</a>
+              </li>
+              <li class="item">
+                <a href="#!">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3 class="heading">Get in touch</h3>
+            <p class="desc">
+              You'll find your next home, in any style you prefer.
+            </p>
+            <div class="socials">
+              <a href="#!" class="social-link">
+                <img src="./assets/img/facebook.svg" alt="" />
+              </a>
+              <a href="#!" class="social-link">
+                <img src="./assets/img/twitter.svg" alt="" />
+              </a>
+              <a href="#!" class="social-link">
+                <img src="./assets/img/linkedin.svg" alt="" />
+              </a>
             </div>
-            <div class="row row-bottom">
-                <img src="./assets/img/Logo.svg" alt="Besnik" class="logo__footer">
-                <p class="copyright">Copyright 2020.com, All rights reserved.</p>
-            </div>
+          </div>
         </div>
+        <div class="row row-bottom">
+          <img src="./assets/img/Logo.svg" alt="Besnik" class="logo__footer" />
+          <p class="copyright">Copyright 2020.com, All rights reserved.</p>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
