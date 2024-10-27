@@ -5,6 +5,7 @@ html {
 }
 body {
   margin: 0;
+  background-color: #e6f0ff;
 }
 h1 {
   font-size: 2em;
@@ -2560,71 +2561,6 @@ figure img:hover {
   align-items: center;
   padding: 5px;
 }
-/* .btn {
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid #3961fb;
-  background: #3961fb;
-  font-weight: 700;
-  color: #fff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  cursor: pointer;
-  padding: 0 10px;
-  margin: 0;
-}
-.btn:hover {
-  text-decoration: underline;
-  color: #fff;
-}
-.btn.complete {
-  background: #16c784;
-  border-color: #16c784;
-}
-.btn.back {
-  background: #f1f1f1;
-  border-color: #f1f1f1;
-  color: #333;
-}
-.btn.red {
-  background: #f73859;
-  border-color: #f73859;
-}
-.btn.btn-outline {
-  background: #fff;
-  border-color: #007aff;
-  color: #007aff;
-}
-.btn i {
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-}
-.btn.next i {
-  background: url(../images/right-arrow-white.svg) center no-repeat;
-  background-size: contain;
-  margin-left: 5px;
-}
-.btn.complete i {
-  background: url(../images/check-mark-white.svg) center no-repeat;
-  background-size: contain;
-  margin-left: 6px;
-}
-.btn.btn-report i {
-  background: url(../images/mobile/report-flag.svg) center no-repeat;
-  background-size: contain;
-  margin-right: 5px;
-}
-.btn .arrow-down {
-  background: url(../images/down-arrow-white.svg) center no-repeat;
-  background-size: contain;
-  margin-left: 5px;
-}
-.btn.btn-block {
-  width: 100% !important;
-} */
 .icon {
   width: 16px;
   height: 16px;
@@ -2654,9 +2590,6 @@ figure img:hover {
 .icon.dashboard {
   background: url(../images/uicon-dashboard.svg) center no-repeat;
   background-size: contain;
-}
-.search.content {
-  margin-top: 50px;
 }
 #searchbar {
   margin-top: 10px;
@@ -2772,13 +2705,13 @@ figure img:hover {
   margin-bottom: 15px;
 }
 .section .section-title {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin: 0;
   padding: 0;
 }
 .section h2.section-title {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .section .section-title.small {
   font-size: 1.2rem;
@@ -3289,15 +3222,54 @@ body.fix-body #navbar-menu {
   margin: 10px;
   /* font-size: 0.95rem; */
 }
+.post-sort.content {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
 .post-sort a {
   display: inline-block;
   margin-left: 5px;
   margin-right: 0;
   text-decoration: none;
   color: #333;
-  background: #e6f0ff;
+  background: #ffffff;
   padding: 5px 10px;
   border-radius: 5px;
+}
+.listing {
+  display: flex;
+}
+.listing .search {
+  flex: 7;
+}
+.listing .listing-side {
+  flex: 3;
+}
+.listing-side ul li a {
+  font-size: 14px;
+}
+.section-title {
+  font-size: 20px;
+}
+.listing-side .section.section-sublink {
+  margin-left: 20px;
+  width: 355px;
+}
+@media screen and (max-width: 768px) {
+  .listing {
+    flex-direction: column;
+  }
+  .listing .search {
+    order: 2;
+  }
+  .listing .listing-side {
+    order: 1;
+    margin: auto;
+    flex: auto;
+  }
+  .listing-side .section.section-sublink {
+    margin: 20px auto;
+  }
 }
 .post-sort a:hover {
   background-color: #e7f0f7;
@@ -3309,8 +3281,14 @@ body.fix-body #navbar-menu {
   font-weight: 700;
   text-decoration: underline;
 }
+.post-listing {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
 .post-listing .post-item {
   display: flex;
+  box-sizing: border-box;
   padding: 15px 0;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -3335,8 +3313,6 @@ body.fix-body #navbar-menu {
 .post-listing .post-item.vipnoibat {
   z-index: 5;
   background-color: #f5fafe;
-  margin-left: -20px;
-  margin-right: -20px;
   padding-left: 20px;
   padding-right: 20px;
 }
