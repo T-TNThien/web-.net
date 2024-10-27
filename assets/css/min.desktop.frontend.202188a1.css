@@ -2704,6 +2704,10 @@ figure img:hover {
   margin-top: 0;
   margin-bottom: 15px;
 }
+.section.section-text {
+  border: 0px;
+  
+}
 .section .section-title {
   font-size: 1.8rem;
   font-weight: 700;
@@ -3704,8 +3708,8 @@ body.fix-body #navbar-menu {
   border-color: #ddd;
 }
 .pagination .page-item.active .page-link {
-  background-color: #e13427;
-  border-color: #e13427;
+  background-color: #3888ff;
+  border-color: #3888ff;
   color: #fff;
 }
 .tags-list > li {
