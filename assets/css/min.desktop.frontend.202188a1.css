@@ -2706,7 +2706,7 @@ figure img:hover {
 }
 .section.section-text {
   border: 0px;
-  
+
 }
 .section .section-title {
   font-size: 1.8rem;
@@ -2724,7 +2724,6 @@ figure img:hover {
   font-size: 2rem;
 }
 .section.section-text .section-content {
-  font-size: 1.05rem;
   padding: 20px;
 }
 .section.section-text .section-content :first-child {
@@ -4292,15 +4291,6 @@ body.post #breadcrumb {
   display: flex;
   align-items: center;
 }
-.the-post .post-address:before {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  content: "";
-  background: url(../images/address-icon.svg) center no-repeat;
-  background-size: contain;
-  margin-right: 5px;
-}
 .the-post .page-h1 {
   font-size: 1.7rem;
 }
@@ -4374,9 +4364,6 @@ body.post #breadcrumb {
   font-weight: 400;
   font-size: 1rem;
   color: #777;
-}
-.the-post .post-main-content .section-content {
-  font-size: 1.1rem;
 }
 .the-post table {
   width: 100%;
