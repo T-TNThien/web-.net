@@ -4482,11 +4482,10 @@ body.fix-body .the-post .post-fix-bar {
   background-size: contain;
 }
 .author-aside {
-  border: 1px solid #febb02;
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 20px;
-  background-color: #febb02;
+  background-color: #496999;
 }
 .author-aside .author-avatar {
   width: 80px;
@@ -4501,6 +4500,7 @@ body.fix-body .the-post .post-fix-bar {
   display: block;
   margin-bottom: 10px;
   text-align: center;
+  color: #e5e5e5;
 }
 .author-aside .author-online-status {
   text-align: center;
